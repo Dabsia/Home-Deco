@@ -42,11 +42,13 @@ header nav{
     font-weight: 200;
     font-size: 14px;
     line-height: 16px;
-    
-
     text-transform: uppercase;
-
+    width: 230px;
     color: #FFFFFF;
+}
+.logo a{
+    font-size: 30px;
+    padding: 10px;
 }
 a{
     text-decoration: none;
@@ -208,8 +210,28 @@ img{
         padding: 0;
         margin-top: 20px;
     }
+    .logo{
+        height: 40px;
+        width: fit-content;
+        padding: 10px;
+    }
+    .logo a{
+        font-size: 14px;
+        padding: 0;
+        width: 70px;
+    }
     nav{
         padding: 0;
+        width: 100vw;
+    }
+    .active::after{
+        content: '';
+        width: 53px;
+        height: 3px;
+        margin: auto;
+        margin-top: 1px;
+        
+        
     }
     .text__desc{
         width: 100%;
@@ -221,9 +243,6 @@ img{
         font-size: 14px;
     }
     .text__title{
-        
-        
-        
         font-size: 32px;
         line-height: 46px;
         color: #FFFFFF;
@@ -238,12 +257,36 @@ img{
         height: 50vh;
     }
     ul{
+        background-color: var(--bgColor);
+        height: 0;
         display: none;
+        width: 100vw;
+
+    }
+    
+    .open{
+        height: 100vh;
+        overflow: hidden;
+        display: block;
+        margin: 20% -10px;
+        
+    }
+    li{
+        width: 100%;
+    }
+    li a{
+        color: #fff;
+        width: 100%;
+        display: block;
+        text-align: center;
     }
     .menu{
         display: block;
         color: #fff;
         font-size: 25px;
+        height: 20px;
+        
+        
     }
     section{
         flex-direction: column;

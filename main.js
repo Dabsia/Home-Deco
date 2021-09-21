@@ -1,11 +1,11 @@
- menu = document.querySelector('.menu');
- ul = document.querySelector('ul')
-menu.addEventListener('click', showNav)
+var menu = document.getElementById('menu');
+var ul = document.querySelector('ul');
+var logo = document.querySelector('.logo')
 
 function showNav() {
-    if (menu.style.display == 'none'){
-        ul.classList.add('block__items')
-    }
-    console.log('sdf')
     
+    ul.classList.toggle('open')
+    
+    document.body.style.overflow = 'hidden'
 }
+menu.addEventListener('click', showNav) 
