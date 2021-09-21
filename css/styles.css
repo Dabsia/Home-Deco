@@ -223,12 +223,14 @@ img{
     nav{
         padding: 0;
         width: 100vw;
+        position: relative;
     }
     .active::after{
         content: '';
         width: 53px;
         height: 3px;
         margin: auto;
+
         margin-top: 1px;
         
         
@@ -258,27 +260,28 @@ img{
     }
     ul{
         background-color: var(--bgColor);
-        height: 0;
+        /* height: 100vh; */
         display: none;
         width: 100vw;
 
     }
     
     .open{
-        height: 100vh;
         overflow: hidden;
         display: block;
-        margin: 20% -10px;
-        
+        position: absolute;
+        height: 100;
+        top: 50px;
+        left: 0;
+        margin-bottom: 200px;
     }
     li{
         width: 100%;
     }
     li a{
         color: #fff;
-        width: 100%;
-        display: block;
         text-align: center;
+        display: block;
     }
     .menu{
         display: block;
